@@ -1,4 +1,4 @@
-@import "./layout.css";
+@import "./layout.scss";
 
 @mixin btn($size:14px,$color:#fff,$bgcolor:#F04752,$padding:5px,$radius:5px) {
     padding: $padding;
