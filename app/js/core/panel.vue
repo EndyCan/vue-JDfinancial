@@ -10,17 +10,17 @@ export default {
     props: {
         cname: {
             type: String,
-            default: "",
+            default: ""
         },
         title: {
             type: String,
-            default: "",
-        },
+            default: ""
+        }
     },
     data() {
         return {
             panelClass: "panel",
         }
-    },
+    }
 }
 </script>
