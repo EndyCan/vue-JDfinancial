@@ -1,20 +1,29 @@
 <template>
- <div>
- </div>
+    <div :class="[btnClass,cname]">
+        <slot/>
+    </div>
 </template>
 
 <script>
- export default {
-   data () {
-     return {
-
-     }
-   },
-   components: {
-
-   }
- }
+  export default {
+    props: {
+      cname: {
+        type: String,
+        default: ""
+      }
+    },
+    data () {
+      return {
+        btnClass: "btn"
+      }
+    }
+  }
 </script>
 
-<style>
+<style lang="scss">
+@import "../../css/element.scss";
+
+.btn{
+  @include btn;
+}
 </style>
